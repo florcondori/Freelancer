@@ -1,3 +1,38 @@
-/*
- * Estilos de tu proyecto
- */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+ a{
+ 	text-decoration: none;
+}
+
+header{
+	position: fixed;
+ 	background-color: #31455A;
+ 	overflow: auto;
+ 	padding: 2rem 10rem;
+ 	width: 100%;
+}
+
+ header *{
+ 	color: white;
+ 	height: 50px;
+}
+
+header a{
+ 	padding: 1rem 0;
+ 	text-align: center;
+}
+
+header a:hover{
+	background: #19C3A8;
+}
+
+.name-proyecto{
+ 	font-size: 2rem;
+    padding: 7px 0;
+ }
+
