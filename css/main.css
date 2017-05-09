@@ -31,6 +31,11 @@ header a:hover{
 	background: #19C3A8;
 }
 
+section{
+	width: 100%;
+	padding: 0 10rem;
+}
+
 .name-proyecto{
  	font-size: 2rem;
     padding: 7px 0;

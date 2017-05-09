@@ -5,7 +5,7 @@
 .container{
 	width: 100%;
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 1000px;
 	overflow: auto;
 }
 
@@ -63,4 +63,9 @@
 
 .col-12{
 	width: 100%;
+}
+
+.bg-turqueza{
+	background: #19C3A8;
+	color: white;
 }
