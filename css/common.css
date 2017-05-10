@@ -78,11 +78,23 @@
 	text-align: center;
 }
 
+.container-line-star{
+	position: relative;
+}
+
 .line-star{
 	max-width: 250px;
 	border-width: 3px;
 	border-style: solid;
 	margin: 2em auto;
+}
+
+.over-hr{
+	position: absolute;
+	top: -10px;
+	left: 48%;
+	font-size: 1.7em;
+	width: 1.5em;
 }
 
 .height-img{

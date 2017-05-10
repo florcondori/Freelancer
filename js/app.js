@@ -15,9 +15,9 @@ window.addEventListener("scroll",function(){
 	var indexScroll = window.pageYOffset;
 	var resetScroll = 0;
 	if(indexScroll>resetScroll){
-		document.getElementsByClassName("name-proyecto")[0].style.fontSize = "1em";
+		document.getElementById("js-header").classList.add("adelgazar");
 	}else{
-		document.getElementsByClassName("name-proyecto")[0].removeAttribute("style");
+		document.getElementById("js-header").classList.remove("adelgazar");
 	}
 
 	if(indexScroll<634){

@@ -23,9 +23,16 @@ header{
  	z-index: 300;
 }
 
+header.adelgazar{
+	padding: 1rem 0;
+}
+
+header.adelgazar p:nth-child(1){
+	font-size: 1em;
+	padding: 14px 0;
+}
  header *{
  	color: white;
- 	height: 50px;
  	font-weight: 700;
 }
 
@@ -45,13 +52,15 @@ section{
 .active{
 	background: #19C3A8;
 }
+
+header p:nth-child(1){
+ 	font-size: 2em;
+    padding: 7px 0;
+}
+
 /*Estilos para la portada*/
 .portada{
 	padding-top: 8em;
-}
-.name-proyecto{
- 	font-size: 2em;
-    padding: 7px 0;
 }
 
 h1{
@@ -88,7 +97,7 @@ div.portada p{
 	color: white; 
 	font-size: 20px;	
 	margin-top: 1em;
-	padding: 10px 7px;
+	padding: 10px;
 	outline: 0;
 }
 #about button:hover{
