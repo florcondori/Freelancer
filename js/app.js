@@ -34,7 +34,4 @@ window.addEventListener("scroll",function(){
 		document.getElementById("js-contact").previousElementSibling.classList.remove("active");
 		document.getElementById("js-contact").classList.add("active");
 	}
-	if(indexScroll>=2144){
-		document.getElementById("js-contact").classList.remove("active");
-	}
 });

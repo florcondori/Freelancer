@@ -16,7 +16,7 @@ h2{
 
 header{
 	position: fixed;
- 	background-color: #31455A;
+ 	background-color: #2C3E50;
  	overflow: auto;
  	padding: 2rem 0;
  	width: 100%;
@@ -152,3 +152,32 @@ div.portada p{
 }
 
 /*Estilos para el header*/
+footer{
+	width: 100%;
+	background: #2C3E50;
+	color: white;
+	text-align: center;
+}
+.footer-2{
+	background: #233140;
+	font-size: 0.75em;
+	padding: 1em 0;
+}
+
+footer p:first-child{
+	font-size: 1.4em;
+	font-weight: 800;
+	margin: 2em 0;
+}
+
+footer p{
+	line-height: 1.5;
+}
+
+footer a{
+	color: #19C3A8;
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
