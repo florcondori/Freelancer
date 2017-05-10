@@ -9,6 +9,11 @@
  	text-decoration: none;
 }
 
+h2{
+	font-size: 2.75em;
+	font-weight: 700;
+}
+
 header{
 	position: fixed;
  	background-color: #31455A;
@@ -20,6 +25,7 @@ header{
  header *{
  	color: white;
  	height: 50px;
+ 	font-weight: 700;
 }
 
 header a{
@@ -28,16 +34,33 @@ header a{
 }
 
 header a:hover{
-	background: #19C3A8;
+	color: #19C3A8;
 }
 
 section{
 	width: 100%;
-	padding: 0 10rem;
+	padding: 5em 0;
+}
+/*Estilos para la portada*/
+.portada{
+	padding-top: 8em;
+}
+.name-proyecto{
+ 	font-size: 2em;
+    padding: 7px 0;
 }
 
-.name-proyecto{
- 	font-size: 2rem;
-    padding: 7px 0;
- }
+h1{
+	font-size: 4.75em;
+	font-weight: 700;
+}
 
+div.portada p{
+	font-size: 1.5em;
+}
+
+/*Estilos para el portafolio*/
+#portafolio img{
+	width: 100%;
+	height: 100%;
+}
