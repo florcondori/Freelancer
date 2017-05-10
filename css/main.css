@@ -109,10 +109,11 @@ div.portada p{
 .container-flex{
 	display: flex;
 	width: 50%;
+	margin: 0 auto;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	height: 600px;
+	height: 575px;
 }
 
 /*Estilos para about*/
