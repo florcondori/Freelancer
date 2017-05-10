@@ -1,6 +1,6 @@
 /*Mostrar los label cuando los input estan seleccionados*/
 var arrayInput = document.getElementsByClassName("js-input");
-console.log(arrayInput);
+
 for(var i=0; i<arrayInput.length; i++){
 	arrayInput[i].onfocus = mostrarLabel;
 }
@@ -44,11 +44,26 @@ window.addEventListener("scroll",function(){
 //hover a la imagenesdel portafolio
 var arrayImagen = document.getElementsByClassName("js-img-portafolio");
 for(var i=0; i<arrayImagen.length; i++){
-	console.log(arrayImagen.lastElementChild);
 	arrayImagen[i].addEventListener("mouseover", function(){
 		this.lastElementChild.style.visibility = "visible";
 	})
 	arrayImagen[i].addEventListener("mouseout", function(){
 		this.lastElementChild.removeAttribute("style");
 	})
+	//mostrar el modal
+	arrayImagen[i].addEventListener("click", function(){
+		var url = this.firstElementChild.getAttribute("src");
+		console.log(url);
+		document.getElementById("modal-box-img").firstElementChild.setAttribute("src",url);
+		document.getElementsByClassName("modal-box")[0].style.display = "block";
+	});
+}
+
+//cerrar el modal
+document.getElementById("btn-close-modal").addEventListener("click", closeModal);
+document.getElementById("ancla-close-modal").addEventListener("click", closeModal);
+
+function closeModal(e){
+	e.preventDefault();
+	this.parentNode.removeAttribute("style");
 }
