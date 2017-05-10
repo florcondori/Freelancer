@@ -69,6 +69,10 @@ div.portada p{
 	height: 100%;
 }
 
+.modal-box{
+	display: none;
+}
+
 /*Estilos para about*/
 #about p{
 	font-size: 20px;
@@ -94,8 +98,9 @@ div.portada p{
 }
 
 /*Estilos para contact me*/
-#contact-me form div{
-	padding-top: 0.5em;
+#contact-me form{
+	width: 75%;
+    margin: 0 auto;
 }
 
 #contact-me form div:nth-child(4){
@@ -149,7 +154,7 @@ div.portada p{
 }
 
 .mostrar-label{
-	top: -0.3em !important;
+	top: -1.3em !important;
 	opacity: 1 !important;
 }
 
@@ -169,7 +174,7 @@ footer{
 footer p:first-child{
 	font-size: 1.4em;
 	font-weight: 800;
-	margin: 2em 0;
+	margin-bottom: 2em;
 }
 
 footer p{
@@ -184,3 +189,28 @@ footer a:hover{
 	text-decoration: underline;
 }
 
+.div-icons{
+	display: flex;
+	justify-content: space-around;
+}
+.div-icons a{
+	border: 2px solid white;
+	border-radius: 50%;
+	color: white;
+	font-size: 1.3em;
+	padding: 10px 13px;	
+	overflow: hidden;
+}
+
+.div-icons a:nth-child(1){
+	padding: 10px 15px;
+}
+
+.div-icons a:nth-child(2){
+	padding: 10px;
+}
+
+.div-icons a:hover{
+	color: #19C3A8;
+	background: white;
+}
