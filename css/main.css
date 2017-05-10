@@ -87,6 +87,7 @@ div.portada p{
 	width: 100%;
 	height: 100%;
 	z-index: 400;
+	overflow: auto;
 }
 .modal-box a{
 	position: absolute;
