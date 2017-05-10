@@ -7,13 +7,18 @@ for(var i=0; i<arrayInput.length; i++){
 
 function mostrarLabel(){
 	var label = this.previousElementSibling;
-	console.log(label);
 	label.classList.add("mostrar-label");
 }
 
 /*Cambiar el background de las anclas del header*/
 window.addEventListener("scroll",function(){
 	var indexScroll = window.pageYOffset;
+	var resetScroll = 0;
+	if(indexScroll>resetScroll){
+		document.getElementsByClassName("name-proyecto")[0].style.fontSize = "1em";
+	}else{
+		document.getElementsByClassName("name-proyecto")[0].removeAttribute("style");
+	}
 
 	if(indexScroll<634){
 		document.getElementById("js-portafolio").classList.remove("active");
@@ -35,3 +40,15 @@ window.addEventListener("scroll",function(){
 		document.getElementById("js-contact").classList.add("active");
 	}
 });
+
+//hover a la imagenesdel portafolio
+var arrayImagen = document.getElementsByClassName("js-img-portafolio");
+for(var i=0; i<arrayImagen.length; i++){
+	console.log(arrayImagen.lastElementChild);
+	arrayImagen[i].addEventListener("mouseover", function(){
+		this.lastElementChild.style.visibility = "visible";
+	})
+	arrayImagen[i].addEventListener("mouseout", function(){
+		this.lastElementChild.removeAttribute("style");
+	})
+}
