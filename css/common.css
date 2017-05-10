@@ -9,8 +9,8 @@
 	overflow: auto;
 }
 
-.row:after{
-	clear: both;
+.row{
+	overflow: auto;
 }
 
 [class*="col-"]{
@@ -89,3 +89,7 @@
 	height: 250px;
 }
 
+.border-div{
+	border: none;
+	border-top: 1px solid lightgray;
+}

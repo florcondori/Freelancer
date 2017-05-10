@@ -12,9 +12,9 @@
 	<header>
 		<div class="container">
 			<p class="col-6 name-proyecto uppercase">startboostrap</p>
-			<a href="#portafolio" class="col-2 uppercase">portafolio</a>
-			<a href="#about" class="col-2 uppercase">about</a>
-			<a href="#contact" class="col-2 uppercase">contact</a>
+			<a id="js-portafolio" href="#portafolio" class="col-2 uppercase">portafolio</a>
+			<a id="js-about" href="#about" class="col-2 uppercase">about</a>
+			<a id="js-contact" href="#contact" class="col-2 uppercase">contact</a>
 		</div>			
 	</header>
 	<section class="bg-turqueza">
@@ -60,5 +60,38 @@
 			<button>Download Theme</button>
 		</div>
 	</section>
+	<section id="contact-me" class="bg-white">
+		<div class="container">
+			<h2 class="uppercase">contact me</h2>
+			<hr class="line-star">
+			<form class="row">
+				<div class="col-12 border-div">
+					<label>Name</label>
+					<input id="name" type="text"  placeholder="Name" class="js-input">
+					<span></span>
+				</div>
+				<div class="col-12 border-div">
+					<label>Email</label>
+					<input id="email" type="text"  placeholder="Email Address" class="js-input">
+					<span></span>
+				</div>
+				<div  class="col-12 border-div">
+					<label>Phone Number</label>
+					<input id="phone" type="text"  placeholder="Phone Number" class="js-input">
+					<span></span>
+				</div>
+				<div  class="col-12 border-div">
+					<label>Message</label>
+					<textarea id="mensaje" placeholder="Message" class="js-input"></textarea>
+					<span></span>
+				</div>
+				<button id="send">Send</button>								
+			</form>
+		</div>
+	</section>
+	<header>
+		
+	</header>
+	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

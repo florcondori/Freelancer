@@ -41,6 +41,9 @@ section{
 	width: 100%;
 	padding: 5em 0;
 }
+.active{
+	background: #19C3A8;
+}
 /*Estilos para la portada*/
 .portada{
 	padding-top: 8em;
@@ -69,6 +72,7 @@ div.portada p{
 	font-size: 20px;
 	line-height: 1.4;
 	text-align: justify;
+	margin-bottom: 1em;
 }
 
 #about button{
@@ -77,8 +81,8 @@ div.portada p{
 	border: 3px solid white;
 	color: white; 
 	font-size: 20px;	
-	margin-top: 2em;
-	padding: 7px;
+	margin-top: 1em;
+	padding: 10px 7px;
 	outline: 0;
 }
 #about button:hover{
@@ -86,3 +90,65 @@ div.portada p{
 	color: #19C3A8;
 	cursor: pointer;
 }
+
+/*Estilos para contact me*/
+#contact-me form div{
+	padding-top: 0.5em;
+}
+
+#contact-me form div:nth-child(4){
+	border-bottom: 1px solid lightgray;
+}
+
+#contact-me form input{
+	width: 100%;	
+	color: grey;
+	border: none;
+	font-size: 20px;
+	outline: 0;	
+}
+
+#contact-me form textarea{
+	font-size: 20px;
+	width: 100%;
+	height: 10rem;	
+	outline: 0;
+	border: none;
+}
+
+#contact-me form label{
+	position: relative;
+	top: 1em;
+	color: #19C3A8;
+	display: block;
+	font-size: 0.65em;
+	opacity: 0;
+	text-align: left;		
+	width: 100%;
+	transition: top .4s ease,opacity .4s ease;
+}
+
+#send{
+	background: #19C3A8;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	float: left;
+	font-weight: 700;
+	font-size: 1em;
+	margin-left: 1em;
+	margin-top: 1.5em;
+	padding: 1em;
+	outline: 0;	
+}
+
+#send:hover{
+	background: #128f76;
+}
+
+.mostrar-label{
+	top: -0.3em !important;
+	opacity: 1 !important;
+}
+
+/*Estilos para el header*/
