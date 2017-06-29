@@ -84,20 +84,23 @@ div.portada p{
 	top: 0;
 	left: 0;
 	background: white;
+	overflow: auto;
 	width: 100%;
 	height: 100%;
 	z-index: 400;
 }
-.modal-box a{
+#ancla-close-modal{
 	position: absolute;
-	top: 2em;
-	right: 2em;
-	font-size: 2rem;
+	top: 1em;
+	right: 1em;
+	font-size: 4rem;
 	color: black;
+	font-weight: lighter;
 }
 
 #modal-box-img{
-	width: 100%;
+	width: 700px;
+	margin-bottom: 1.7rem;
 }
 
 #btn-close-modal{
@@ -107,14 +110,25 @@ div.portada p{
 	padding: 7px;
 }
 .container-flex{
+	margin: 0 auto;
 	display: flex;
 	width: 50%;
 	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	height: 600px;
+	align-items: center;	
 }
-s
+.modal-box p.interlineado{
+	font-size: 20px;
+}
+.modal-box a{
+	color: #19C3A8;
+}
+.modal-box span{
+	margin: 0 4px;
+}
+.modal-box a;hover{
+	text-decoration: underline;
+}
+
 /*Estilos para about*/
 #about p{
 	font-size: 20px;
@@ -170,7 +184,7 @@ s
 	top: 1em;
 	color: #19C3A8;
 	display: block;
-	font-size: 0.65em;
+	font-size: 0.8em;
 	opacity: 0;
 	text-align: left;		
 	width: 100%;
@@ -223,10 +237,6 @@ footer p:first-child{
 	margin-bottom: 2em;
 }
 
-footer p{
-	line-height: 1.5;
-}
-
 footer a{
 	color: #19C3A8;
 }
@@ -259,4 +269,7 @@ footer a:hover{
 .div-icons a:hover{
 	color: #19C3A8;
 	background: white;
+}
+.hideen-scroll{
+	overflow: hidden;
 }

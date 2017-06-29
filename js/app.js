@@ -2,7 +2,7 @@
 var arrayInput = document.getElementsByClassName("js-input");
 
 for(var i=0; i<arrayInput.length; i++){
-	arrayInput[i].onfocus = mostrarLabel;
+	arrayInput[i].onkeypress = mostrarLabel;
 }
 
 function mostrarLabel(){
@@ -41,7 +41,7 @@ window.addEventListener("scroll",function(){
 	}
 });
 
-//hover a la imagenesdel portafolio
+//hover a la imagenes del portafolio
 var arrayImagen = document.getElementsByClassName("js-img-portafolio");
 for(var i=0; i<arrayImagen.length; i++){
 	arrayImagen[i].addEventListener("mouseover", function(){
@@ -54,6 +54,7 @@ for(var i=0; i<arrayImagen.length; i++){
 	arrayImagen[i].addEventListener("click", function(){
 		var url = this.firstElementChild.getAttribute("src");
 		console.log(url);
+		document.body.classList.add("hideen-scroll");
 		document.getElementById("modal-box-img").firstElementChild.setAttribute("src",url);
 		document.getElementsByClassName("modal-box")[0].style.display = "block";
 	});
@@ -66,4 +67,5 @@ document.getElementById("ancla-close-modal").addEventListener("click", closeModa
 function closeModal(e){
 	e.preventDefault();
 	this.parentNode.removeAttribute("style");
+	document.body.classList.remove("hideen-scroll");
 }
